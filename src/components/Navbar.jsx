@@ -17,7 +17,7 @@ export const Navbar = () => {
       <div className="flex space-x-10">
         <div>
           <img
-            src="/cart.svg"
+            src="cart.svg"
             alt=""
             width={24}
             height={24}
@@ -27,7 +27,7 @@ export const Navbar = () => {
         <div className="flex space-x-1">
           <h4 className="text-white font-light">Hello, James</h4>
           <img
-            src="/arrow-down.svg"
+            src="arrow-down.svg"
             alt=""
             width={24}
             height={24}
