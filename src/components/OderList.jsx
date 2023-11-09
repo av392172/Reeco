@@ -23,7 +23,6 @@ const OderList = () => {
         <div className="flex items-center flex-1 justify-end gap-10">
           <Button title={"Add item"} color="text-green-800" bgCol="bg-white" />
           <img src="print.svg" alt="logo" height={24} width={24} />
-          {/* #166534 */}
         </div>
       </div>
       <div className="border border-gray-300 mt-4 rounded-lg">
