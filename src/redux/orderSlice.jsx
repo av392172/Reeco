@@ -17,6 +17,13 @@ export const orderSlice = createSlice({
       state.orders = state.orders.map((item) => {
         if (item.id === action.payload.id) {
           item.Status = action.payload.status;
+          if (
+            action.payload.status === "Missing" ||
+            action.payload.status === "Missing - Urgent"
+          ) {
+            item.Quantity = 0;
+            item.Total = 0;
+          }
         }
         return item;
       });

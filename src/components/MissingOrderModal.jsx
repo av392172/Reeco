@@ -27,8 +27,8 @@ export const MissingOrderModal = ({ setModal }) => {
         </div>
       </div>
       <div>
-        <p className="font-medium text-sm">
-          {`Is '${selectedOrder.Product_Name.slice(0, 25)}...' urgent?`}
+        <p className="font-medium text-xs">
+          {`Is '${selectedOrder.Product_Name.slice(0, 32)}...' urgent?`}
         </p>
       </div>
       <div className="flex items-center gap-6 justify-end p-2">
