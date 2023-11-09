@@ -55,7 +55,9 @@ export const Order = ({ item, setModal }) => {
       <td className="px-1 py-3 text-xs whitespace-nowrap text-center">
         <b className="font-bold">{`${item.Quantity}`}</b> x6*1LB
       </td>
-      <td className="px-1 py-3 text-xs whitespace-nowrap text-center">{`$${item.Total}`}</td>
+      <td className="px-1 py-3 text-xs whitespace-nowrap text-center">{`${
+        item.Total ? "$" : ""
+      }${item.Total}`}</td>
       <td className="whitespace-nowrap text-center px-2 bg-gray-100">
         {item.Status.length ? (
           <div className={`border ${variant} px-2 py-1 text-xs rounded-full`}>
